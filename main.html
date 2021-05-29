@@ -1,0 +1,248 @@
+<html>
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+    .img:hover
+			{
+			-ms-transform: scale(1.5); /* IE 9 */
+			-webkit-transform: scale(1.5); /* Safari 3-8 */
+			transform: scale(1.5);
+			}
+              body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+          .header {
+            overflow: hidden;
+
+            padding: 20px 10px;
+          }
+
+          .header a {
+            float: left;
+
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+          }
+
+          .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+          }
+
+          .header a:hover {
+
+            color: black;
+          }
+
+          .header a.active {
+            background-color: #001a09;
+            color: white;
+          }
+
+          .header-right {
+            float: right;
+          }
+
+          @media screen and (max-width: 500px) {
+            .header a {
+              float: none;
+              display: block;
+              text-align: left;
+            }
+
+            .header-right {
+              float: none;
+            }
+          }
+    </style>
+    <script type="text/javascript">
+    function change(x)
+    {
+    
+      window.location.href=x
+    }
+    </script>
+  </head>
+  <body style="background-color:black ">
+    <div class="cotainer">
+    <div class="head" style="border-radius:0">
+      <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
+        <div class="jumbotron" style="background: linear-gradient(to left, #339966 0%, #336600 100%);padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;">
+          <div class="header"style="padding-top: 0px;padding-bottom: 0px;">
+            <p style="color: 	#000000 ;font-size:50px;padding-top:20px;float:left">Nursery</p>
+            <img src="plant.png" height="50px" width="50px" style="margin:30px 15px 0 10px;float:left" alt="" >
+            <p style="color: 	#000000 ;font-size:50px;padding-top:20px;margin-bottom: 0px;" accesskey="">Store</p>
+            <!--<div class="header-right">
+              <a class="active" href="#home" style="margin:10 20 0 0">Home</a>
+              <a class="active" href="#contact" style="margin:10 20 0 0">Contact</a>
+              <a class="active" href="#about" style="margin:10 20 0 0">About</a>
+              <img src="cart1.png" height="70px" width="70px" style="margin-bottom:2%" alt="" >
+            </div>-->
+            <div class=>
+              <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="float:left;width:50%; margin:20px 140px 0 20px" >
+              <button type="button" class="btn btn-dark" title="" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title" style="margin-right:20px" onclick="change('main.html')">Home</button>
+              <button type="button" class="btn btn-dark" title="" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamussagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title" style="margin-right:20px">Contact</button>
+              <button type="button" class="btn btn-dark" title="" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title" style="margin-right:20px" onclick="change()">About</button>
+              <img src="cart1.png" class="img" height="50px" width="50px" style="margin-bottom:2%; margin-right:40px" alt="" onclick="change('cart.html')">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3" style="background-color:#000000;height:700px">
+        <div class="dropdown" style="margin-left:25%; margin-top:50px ">
+          <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Sort By
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Price low to high</a></li>
+            <li><a href="#">Price high to low</a></li>
+          </ul>
+        </div>
+        <div style="margin-left:25%">
+        <h3 style="color:white; margin-top:30px">Plant-type</h3>
+
+        <div style="margin-left:20px">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="" checked="">
+          <span style="color:white">Small</span>
+        </label>
+      </div>
+      <div style="margin-left:20px">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="" checked="">
+          <span style="color:white">Medium</span>
+        </label>
+      </div>
+      <div style="margin-left:20px">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" value="" checked="">
+          <span style="color:white">Large</span>
+        </label>
+      </div>
+    </div>
+      </div>
+      <div class="col-sm-9" style="background-color:#000000;height:700px">
+
+          <div class="row" style="background-color:black;height:166px;padding:50px 100px 50px 0; height:200px">
+            <div class="col-sm-4">
+              <div class="container" style="text-align:center">
+
+                <div class="card" style="border-color:">
+                  <div class="card-body" style="background-color:lightgrey"><img src="plant1.jpg" height="150px" width="150px"></div>
+                  <div >
+                    <a href>
+                    <p class="card-text"style="margin-bottom: 0px;">Alovera </p>
+                    <p class="card-text">price:25 Rs</p>
+                  </a>
+                  </div>
+                  <div class="card-footer" style="background-color:grey"><button type="button" class="btn btn-dark" style="width:150px">Add to cart</button></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="container" style="text-align:center">
+
+                <div class="card" style="border-color:white">
+                  <div class="card-body" style="background-color:lightgrey"><img src="plant2.jpg" height="150px" width="150px" ></div>
+                  <a href>
+                  <p class="card-text"style="margin-bottom: 0px;">Alovera </p>
+                  <p class="card-text">price:25 Rs</p>
+                </a>
+                  <div class="card-footer" style="background-color:grey"><button type="button" class="btn btn-dark" style="width:150px">Add to cart</button></div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-sm-4">
+              <div class="container" style="text-align:center">
+                <div class="card" style="border-color:white">
+                  <div class="card-body" style="background-color:lightgrey"><img src="plant3.jpg" height="150px" width="150px" ></div>
+                  <a href>
+                  <p class="card-text"style="margin-bottom: 0px;">Alovera </p>
+                  <p class="card-text">price:25 Rs</p>
+                </a>
+                  <div class="card-footer" style="background-color:grey"><button type="button" class="btn btn-dark" style="width:150px">Add to cart</button></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row" style="background-color:black;height:166px; padding:80px 100px 0 0; margin-top:100px">
+            <div class="col-sm-4">
+              <div class="container" style="text-align:center">
+                <div class="card" style="border-color:white">
+                  <div class="card-body" style="background-color:lightgrey"><img src="plant4.jpg" height="150px" width="150px" ></div>
+                  <a href>
+                  <p class="card-text"style="margin-bottom: 0px;">Alovera </p>
+                  <p class="card-text">price:25 Rs</p>
+                </a>
+                  <div class="card-footer" style="background-color:grey"><button type="button" class="btn btn-dark" style="width:150px">Add to cart</button></div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-sm-4">
+              <div class="container" style="text-align:center">
+                <div class="card" style="border-color:white">
+                  <div class="card-body"  style="background-color:lightgrey"><img src="plant5.jpg" height="150px" width="150px"></div>
+                  <a href>
+                  <p class="card-text"style="margin-bottom: 0px;">Alovera </p>
+                  <p class="card-text">price:25 Rs</p>
+                </a>
+                  <div class="card-footer" style="background-color:grey"><button type="button" class="btn btn-dark" style="width:150px">Add to cart</button></div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-sm-4">
+              <div class="container" style="text-align:center" >
+                <div class="card" style="border-color:white">
+                  <div class="card-body" style="background-color:lightgrey"><img src="plant6.jpg" height="150px" width="150px" ></div>
+                  <a href>
+                  <p class="card-text"style="margin-bottom: 0px;">Alovera </p>
+                  <p class="card-text">price:25 Rs</p>
+                </a>
+                  <div class="card-footer" style="background-color:grey"><button type="button" class="btn btn-dark" style="width:150px">Add to cart</button></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="row" style="background-color:black;height:166px;padding:30px;">
+            <div class="col-sm-4">
+
+
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+          </div>
+      </div>
+      </div>
+  </div>
+  <div class=row>
+  </div>
+</div>
+  </body>
+</html>
